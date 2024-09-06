@@ -10,7 +10,12 @@ import { CatsModule } from './cats/cats.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/test'),
+    // MongooseModule.forRoot('mongodb://localhost:27017/test'),
+    // MongooseModule.forRoot('mongodb://root:Gjvuvp2geJj@localhost:27017/test'),
+    MongooseModule.forRoot('mongodb://root:Gjvuvp2geJj@localhost:27017/test?authSource=admin'),
+    // MONGODB_URI=mongodb://username:password@127.0.0.1/payload-cms?authSource=admin
+
+// mongodb://root:Gjvuvp2geJj@localhost:27017/
     CatsModule,
   ],
 })

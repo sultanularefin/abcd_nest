@@ -24,8 +24,8 @@ export class Cat {
 
 
   // inside the class definition
-  @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Owner' })
-  owner: Owner;
+ /* @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Owner' })
+  owner: Owner;*/
 
 
   /*
